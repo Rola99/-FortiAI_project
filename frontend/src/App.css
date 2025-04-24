@@ -1,0 +1,241 @@
+/* Hero Section */
+.hero-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Overlay */
+.hero-overlay {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.hero-logo {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 150px;   /* بدل 80px */
+  height: auto;
+  z-index: 2;
+}
+
+
+/* Big Title */
+.hero-text {
+  position: absolute;
+  top: 45%; left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 4rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 12px rgba(0,0,0,0.8);
+  z-index: 2;
+}
+
+/* CTA Button */
+.cta-button {
+  position: absolute;
+  top: 60%; left: 50%;
+  transform: translateX(-50%);
+  background-color: #6f00ff;
+  color: #fff;
+  border: none;
+  padding: 16px 32px;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  z-index: 2;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #00cfff;
+  transform: translateX(-50%) scale(1.05);
+}
+
+/* Categories Section */
+.categories-section {
+  padding: 80px 20px;
+  text-align: center;
+  background: #100028;
+}
+
+.categories-section h2 {
+  color: #9be3ff;
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+.buttons-group {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.buttons-group button {
+  background-color: #6f00ff;
+  color: #fff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 12px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.buttons-group button:hover {
+  background-color: #00cfff;
+  transform: scale(1.05);
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to bottom, #1e003d, #00001a);
+    color: #fff;
+    overflow-x: hidden;
+  }
+  
+  h2 {
+    color: #9be3ff;
+  }
+  /* ===== Hero Section ===== */
+.hero-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .overlay-text {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 4rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+    white-space: nowrap;
+  }
+  
+  .cta-button {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #6f00ff;
+    color: #fff;
+    border: none;
+    padding: 16px 32px;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #00cfff;
+    transform: translateX(-50%) scale(1.05);
+  }
+  
+  /* ===== Categories Section ===== */
+  .categories-section {
+    background: linear-gradient(to bottom, #0a0015, #100028);
+    padding: 80px 20px;
+    text-align: center;
+  }
+  
+  .categories-section h2 {
+    color: #9be3ff;
+    font-size: 2rem;
+    margin-bottom: 40px;
+  }
+  
+  .buttons-group {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  .buttons-group button {
+    background-color: #6f00ff;
+    color: #fff;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 12px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .buttons-group button:hover {
+    background-color: #00cfff;
+    transform: scale(1.05);
+  }
+  
+  button {
+    background-color: #6f00ff;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #00cfff;
+    transform: scale(1.05);
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+    border-bottom: 5px solid #00cfff;
+  }
+
+  .header-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;           /* تخلي الصورة تعبّي الشاشة كاملة */
+    overflow: hidden;
+  }
+  
+  .header-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  /* الشعار المرفوع فوق الصورة */
+  .overlay-text {
+    position: absolute;
+    top: 50%;                /* نص في منتصف الارتفاع */
+    left: 50%;               /* نص في منتصف العرض */
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    font-size: 3rem;         /* حجم الخط كبير */
+    font-weight: bold;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* ظل للخروج من الخلفية */
+    white-space: nowrap;     /* يمنع التفاف الكلمة */
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+  }
+  
